@@ -14,7 +14,6 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	box-shadow: 0 0 16px black;
-	margin-bottom: 30px;
 }
 
 .item {
@@ -24,8 +23,6 @@ body {
 	cursor: pointer;
 	width: 10%;
 }
-
-
 
 .item:hover {
 	font-weight: bold;
@@ -49,11 +46,6 @@ body {
 	width: 50%;
 	height: auto;
 	box-shadow: 0 0 16px black;
-	transition: 300ms;
-}
-
-.image img:hover {
-	transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

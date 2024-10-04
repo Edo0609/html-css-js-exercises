@@ -8,62 +8,16 @@
 </head>
 <body>
 	<div class="navbar">
-		<div class="item" id="bcuadrados">Cuadrados</div>
-		<div class="item" id="bcirculos">Circulos</div>
-		<div class="item" id="btres">3 Columnas</div>
-		<div class="item" id="bdos">2 columnas</div>
-		<div class="item" id="bgris">Filtro Gris</div>
-		<div class="item" id="bcolor">Color</div>
+		<div class="item">Home</div>
+		<div class="item">About</div>
+		<div class="item">Services</div>
+		<div class="item">Contact</div>
 	</div>
-	<div class="images" id="images">
+	<div class="images">
 		<div class="image"><img src="symphony.jpg" alt="dolphin"></div>
 		<div class="image"><img src="fitboxing miku.jpg" alt="dolphin"></div>
 		<div class="image"><img src="cat from ipanema.jpg" alt="dolphin"></div>
 		<div class="image"><img src="i just lost my dawg.jpg" alt="dolphin"></div>
 	</div>
 </body>
-
-<script>
-	const gris = document.getElementById("bgris");
-	const color = document.getElementById("bcolor");
-	const cuadrado = document.getElementById("bcuadrados");
-	const circulo = document.getElementById("bcirculos");
-	const tres = document.getElementById('btres');
-	const dos = document.getElementById('bdos');
-	var grid = document.getElementById('images');
-	var images = document.querySelectorAll("#images img");
-	
-
-	tres.addEventListener('click', function() {
-		grid.style.gridTemplateColumns = 'repeat(3, minmax(200px, 1fr))';
-	});
-	dos.addEventListener('click', function() {
-		grid.style.gridTemplateColumns = 'repeat(2, minmax(200px, 1fr))';
-	});
-	gris.addEventListener('click', function() {
-		images.forEach(function(img) {
-			img.style.filter = 'grayscale(100%)';
-		});
-	});
-
-	color.addEventListener('click', function() {
-		images.forEach(function(img) {
-			img.style.filter = 'grayscale(0%)';
-		});
-	});
-
-	cuadrado.addEventListener('click', function() {
-		images.forEach(function(img) {
-			img.style.borderRadius = '0%';
-			img.style.aspectRatio = 'auto';
-		})
-	});
-
-	circulo.addEventListener('click', function() {
-		images.forEach(function(img) {
-			img.style.borderRadius = '50%';
-			img.style.aspectRatio = '1 / 1';
-		})
-	});
-</script>
 </html>
